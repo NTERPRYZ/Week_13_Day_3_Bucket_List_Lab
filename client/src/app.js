@@ -31,6 +31,7 @@ const populateList = function(countries){
   })
 
   const getCountrySelectClicked = function(){
+    const index = 0
     const selectedCountry = countries[this.value]
 
     const countryName = document.getElementById('country-name')
@@ -39,8 +40,15 @@ const populateList = function(countries){
     const countryFlag = document.getElementById('country-flag')
     countryFlag.src = selectedCountry.flag
 
-    console.log(selectedCountry.flag);
-    // save(selectedCountry);
+    const countryCapital = document.getElementById('country-capital')
+    countryCapital.innerText = "Capital City: " + selectedCountry.capital
+
+    const countryPopulation = document.getElementById('country-population')
+    countryPopulation.innerText = "Population: " + selectedCountry.population.toLocaleString()
+
+    const list = document.getElementById('list')
+    list.innerText = (index+1) + ".  " + selectedCountry.name
+    save(list);
   }
   select.addEventListener('change', getCountrySelectClicked);
 }
