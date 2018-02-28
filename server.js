@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname + 'client/build/index.html'));
+  res.sendFile(__dirname + '/client/build/');
 });
 
 app.use(express.static('client/src'))
