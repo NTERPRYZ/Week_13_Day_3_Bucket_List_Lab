@@ -1,0 +1,23 @@
+{
+  "name": "bucket_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NTERPRYZ/Week_13_Day_3_Bucket_List_Lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NTERPRYZ/Week_13_Day_3_Bucket_List_Lab/issues"
+  },
+  "homepage": "https://github.com/NTERPRYZ/Week_13_Day_3_Bucket_List_Lab#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
