@@ -48,7 +48,7 @@ const populateList = function(countries){
 
     const list = document.getElementById('list')
     list.innerText = (index+1) + ".  " + selectedCountry.name
-    save(list);
+    // save(list);
   }
   select.addEventListener('change', getCountrySelectClicked);
 }
